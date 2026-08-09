@@ -41,3 +41,9 @@
 * **Risk-First Development:** Tackle the hardest unknowns (data quality, extraction variance) before writing infrastructure code.
 * **Data Integrity Over Volume:** Focus on schema validation, idempotency, and explicit error handling before scaling batch sizes.
 * **Clear System Boundaries:** Keep API boundaries clean, avoiding heavy pipeline dependencies in lightweight serving containers.
+
+---
+
+## 📈 Live System Status
+
+![Dynamic Profile Status](./status.svg)
