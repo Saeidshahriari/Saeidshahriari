@@ -23,6 +23,8 @@ jobs:
           python-version: "3.12"
 
       - name: Run SVG Generator Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_stats.py
 
       - name: Commit and Push Changes

@@ -63,7 +63,7 @@ layers and an unsupervised market-abuse surveillance model.
   * **REMIT surveillance model:** Isolation Forest, unsupervised because real market abuse is rare and unlabelled. 3/3 planted abuse patterns detected, 5% false-positive rate, and every alert carries a human-readable reason.
   * **Found a real bug in production data:** the poisoning gate caught an ingestion filter that was fetching grid load in MW instead of price in EUR/MWh. Code review had missed it.
 
-### 📄 Intelligent Document Extraction Pipeline *(Belgian Gazette Deeds)*
+### 📄 [Intelligent Document Extraction Pipeline](https://github.com/Saeidshahriari/belgian-deeds-lakehouse) *(Belgian Gazette Deeds)*
 
 * **Focus:** Risk-first PDF ingestion, OCR, LLM extraction with Gemini 2.5 Flash, and relational PostgreSQL modeling.
 * **Architecture Highlights:**
@@ -72,12 +72,12 @@ layers and an unsupervised market-abuse surveillance model.
   * **Resilience & Idempotency:** SHA-256 file hashing for duplicate detection, and exponential backoff retry logic (`tenacity`) for LLM rate limits.
   * **Serving Layer:** Clean REST endpoints via FastAPI for business decision-maker lookup and enterprise querying.
 
-### 🔄 Real-Time CDC Streaming Platform
+### 🔄 [Real-Time CDC Streaming Platform](https://github.com/Saeidshahriari/End-to-End-Real-Time-Food-Delivery-Platform)
 
 * **Focus:** Change Data Capture pipeline for real-time analytics.
 * **Tech:** Kafka | Flink SQL | Debezium | Redis | OpenSearch | Docker
 
-### 🛡️ Privacy-Driven Streaming Data Pipeline
+### 🛡️ [Privacy-Driven Streaming Data Pipeline](https://github.com/Saeidshahriari/postgres-anonymizer-streaming)
 
 * **Focus:** Dynamic masking, HMAC tokenization, and GDPR-compliant sanitized schema generation.
 * **Tech:** PostgreSQL | Python | Docker | Privacy Engineering
@@ -96,8 +96,14 @@ layers and an unsupervised market-abuse surveillance model.
 
 ## 📫 Get in touch
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Saeid_Shahriari-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saeidshahriari/)
+[![Website](https://img.shields.io/badge/Website-saeidshahriari.com-000000?style=for-the-badge&logo=googlechrome&logoColor=white)](https://saeidshahriari.com/)
+[![Sponsor](https://img.shields.io/badge/Sponsor-Buy_me_a_coffee-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Saeidshahriari)
+
 ![Location](https://img.shields.io/badge/Brussels-Belgium-000000?style=flat-square&logo=googlemaps&logoColor=white)
 ![Open to](https://img.shields.io/badge/open_to-Data_Engineering_%2F_MLOps-success?style=flat-square)
+
+> ☕ If a project here (or one of my data-engineering tutorials) saved you time, [buying me a coffee](https://github.com/sponsors/Saeidshahriari) helps me keep building and writing.
 
 ---
 
