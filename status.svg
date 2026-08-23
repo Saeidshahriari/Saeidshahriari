@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="70" viewBox="0 0 480 70">
   <rect width="100%" height="100%" fill="#0d1117" rx="10" />
   <text x="20" y="30" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#58a6ff" font-weight="bold">
-    📦 <tspan fill="#c9d1d9">19 public repos</tspan> · 👥 <tspan fill="#c9d1d9">3 followers</tspan> · 🧩 <tspan fill="#c9d1d9">Python · Java · Jupyter Notebook</tspan>
+    📦 <tspan fill="#c9d1d9">19 public repos</tspan> · 👥 <tspan fill="#c9d1d9">4 followers</tspan> · 🧩 <tspan fill="#c9d1d9">Python · Java · Jupyter Notebook</tspan>
   </text>
   <text x="20" y="52" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#58a6ff" font-weight="bold">
-    ⚡ Last updated: <tspan fill="#c9d1d9">August 22, 2026</tspan>
+    ⚡ Last updated: <tspan fill="#c9d1d9">August 23, 2026</tspan>
   </text>
 </svg>
