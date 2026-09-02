@@ -1,5 +1,8 @@
 # Hi there, I'm Saeid Shahriari 👋
 
+<!-- Profile views counter (komarev). Counts visits to your profile page. -->
+<img src="https://komarev.com/ghpvc/?username=Saeidshahriari&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+
 > **Data & MLOps Engineer** |
 > Building resilient data pipelines, scalable stream-processing systems, and
 > secured lakehouse platforms where data quality is enforced, not assumed.

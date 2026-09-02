@@ -1,10 +1,17 @@
 name: Update Profile Stats
 
 on:
-  schedule:
-    # Runs daily at midnight UTC
-    - cron: "0 0 * * *"
-  workflow_dispatch: # Allows manual trigger from GitHub UI
+  # Runs only when you push a real change to the profile repo (no daily timer)
+  push:
+    branches: [main]
+    paths-ignore:
+      - "status.svg"   # ignore the bot's own auto-commit so it does not loop
+  workflow_dispatch: # Allows manual trigger from the GitHub UI
+
+# Prevent overlapping runs
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -32,4 +39,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           git add status.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update profile SVG" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update profile SVG [skip ci]" && git push)
